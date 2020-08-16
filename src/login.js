@@ -34,15 +34,23 @@ class Login extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Username:
-          <input type="text" value={this.state.value} onChange={this.handleChangeUser} />
-        </label>
-        <label>
-          Password:
-          <input type="password" value={this.state.value} onChange={this.handleChangePass} />
-        </label>
-        <input type="submit" value="Submit" />
+      <div class="flex center miniLogin">
+        <div class="flex one">
+          <label>
+            Username:
+            <input type="text" value={this.state.value} onChange={this.handleChangeUser} />
+          </label>
+        </div>
+        <div class="flex one">
+          <label>
+            Password:
+            <input type="password" value={this.state.value} onChange={this.handleChangePass} />
+          </label>
+        </div>
+        <div class="flex one">
+          <input type="submit" value="Submit" />
+        </div>
+      </div>
       </form>
     );
   }

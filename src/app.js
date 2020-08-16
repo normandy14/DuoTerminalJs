@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-import Select from './select'
+import Login from './login'
 
 class App extends Component {
   render() {
     return (
       <div className = "App">
-        <Select></Select>
+        <div class="flex">
+          <Login></Login>
+        </div>
       </div>
     )
   }
